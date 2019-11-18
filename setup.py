@@ -1,9 +1,9 @@
 import cx_Freeze
 
-executables = [cx_Freeze.Executable("pygameVideo15.py")]
+executables = [cx_Freeze.Executable("TicTacToe.py")]
 
 cx_Freeze.setup(
-    name="A bit Racey",
+    name="TicTacToe",
     options={"build_exe": {"packages":["pygame"]
                            }},
     executables = executables
