@@ -22,7 +22,7 @@ jobs:
         python -m pip install cx_Freeze --upgrade
         python setup.py build
         mkdir tictactoe
-        cp build/TicTacToe ../tictactoe
+        cp dist/TicTacToe ../tictactoe
         # stop the build if there are Python syntax errors or undefined names
         
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
