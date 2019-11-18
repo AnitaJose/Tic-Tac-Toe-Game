@@ -21,9 +21,9 @@ jobs:
     - name: pygame
       run: |
         
-        mkdir ../to-upload
+        mkdir anita
         pyinstaller --onefile TicTacToe.py
-        cp dist/TicTacToe ../to-upload
+        cp dist/TicTacToe anita
 
         # stop the build if there are Python syntax errors or undefined names
         
