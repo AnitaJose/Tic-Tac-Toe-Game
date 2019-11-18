@@ -16,13 +16,15 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip3 install pygame
+        pip3 install pyinstaller
     - name: pygame
       run: |
-        pip install pygame
-        python -m pip install cx_Freeze --upgrade
-        python setup.py build
-        mkdir tictactoe
-        cp build/TicTacToe.exe ../tictactoe
+        
+        mkdir ../to-upload
+        pyinstaller --onefile TicTacToe.py
+        cp dist/utn_ssh ../to-upload
+
         # stop the build if there are Python syntax errors or undefined names
         
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
