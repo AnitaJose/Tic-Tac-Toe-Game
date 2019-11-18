@@ -23,7 +23,7 @@ jobs:
         
         mkdir ../to-upload
         pyinstaller --onefile TicTacToe.py
-        cp dist/utn_ssh ../to-upload
+        cp dist/TicTacToe ../to-upload
 
         # stop the build if there are Python syntax errors or undefined names
         
